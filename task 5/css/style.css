@@ -1,0 +1,287 @@
+
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  heigth: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-100 {
+  width: 100%;
+}
+.col-50 {
+  width: 50%;
+}
+
+/* FIXED heights*/
+.center {
+  height: 85%;
+}
+    .content {
+      height: 100%;
+    }
+
+
+
+
+
+
+
+
+.background-image {
+  background-image: url('../img/munti.jpg');
+  background-size: cover;
+  filter: blur(5px);
+  -webkit-filter: blur(17px);
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
+}
+    .center {
+      position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 35%;
+    }
+        .content {
+          background: white;
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          position: fixed;
+          opacity: 0.8;
+          width: 100%;
+        }
+          .header {
+            overflow: hidden;
+          }
+            .face {
+              text-align: left;
+              padding: 5% 0;
+              padding-left: 5%;
+              width: 40%;
+              float: left;
+            }
+                .face img {
+                  width: 50%;
+                  border-radius: 10%;
+                }
+            .header_text {
+              float: left;
+              width: 70%;
+              padding: 4.65%;
+              margin-left: -19%;
+            }
+              .header h1 {
+                margin: 0;
+                font-size: 4vh;
+                font-weight: 600;
+              }
+              .header h2 {
+                font-size: 1.5vh;
+                font-weight: 200;
+                line-height: 0;
+              }
+
+              .buttons {
+                position: relative;
+                list-style: none;
+                overflow: hidden;
+                font-size: 100%;
+              }
+                  .buttons a {
+                    text-decoration: none;
+                    border-top: 2px solid;
+                    border-bottom: 2px solid;
+                    display: inline;
+                    background: #3F51B5;
+                    width: 50%;
+                    padding: 2.5vh;
+                    float: left;
+                    text-align: center;
+                    color: black;
+                    font-weight: 600;
+                    border-color: rgba(128, 128, 128, 0.49);
+                  }
+                  .buttons a:last-child {
+                    border-left: 2px solid;
+                    border-color: rgba(128, 128, 128, 0.49);
+                  }
+                  .arrow-up {
+                    position: absolute;
+                    left: 25%;
+                    bottom: 0;
+                  	width: 0;
+                  	height: 0;
+                  	border-left: 10px solid transparent;
+                  	border-right: 10px solid transparent;
+                    border-bottom: 10px solid white;
+                  }
+                  form {
+                    overflow: hidden;
+                  }
+                  form input {
+                    float: left;
+                    padding: 2.5vh 0;
+                    border: none;
+                    padding-left: 2vw;
+                  }
+                  form input[name="firstname"] {
+                    width: 50.3%;
+                    border-left: none;
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+                    border-right: 2px solid rgba(128, 128, 128, 0.49);
+
+                  }
+                  form input[name="gender"] {
+                    width: 15%;
+                    padding-left: 0;
+                    text-align: center;
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+
+                  }
+                  form input[name="lastname"] {
+                    width: 34.5%;
+                    border-right: none;
+                    border-left: 2px solid rgba(128, 128, 128, 0.49);
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+
+                  }
+                  form input[name="email"],
+                  form input[name="payment"] {
+                    border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+                    border-left: none;
+                    width: 100%;
+                  }
+                    ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                        color:    grey;
+                        font-weight: 600;
+                        font-size: large;
+
+
+                    }
+                    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                       color:    grey;
+                       opacity:  1;
+                       font-weight: 600;
+                       font-size: large;
+
+                    }
+                    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                       color:    grey;
+                       opacity:  1;
+                       font-weight: 600;
+                       font-size: large;
+
+                    }
+                    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                       color:    grey;
+                       font-weight: 600;
+                       font-size: large;
+
+                    }
+                    :placeholder-shown { /* Standard (https://drafts.csswg.org/selectors-4/#placeholder) */
+                      color:    grey;
+                      font-weight: 600;
+                      font-size: large;
+
+                    }
+
+/* Calculator*/
+.calculator {
+  overflow: hidden;
+}
+    .sum {
+      border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+      text-align: center;
+      padding: 27.9%;
+      background: rgba(255, 255, 0, 0.28);
+    }
+      .sum p {
+        font-size: 300%;
+        margin: 0;
+      }
+
+
+    .numbers {
+      border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+      border-left: 2px solid rgba(128, 128, 128, 0.49);
+
+    }
+      .numbers .row {
+        border-bottom: 2px solid rgba(128, 128, 128, 0.49);
+        width: 100%;
+      }
+      .numbers .row:last-child {
+        border-bottom: none;
+      }
+          .numbers .default {
+            width: 32.5%;
+            background: none;
+            border-bottom: none;
+            border-left: none;
+            border-right: 2px solid rgba(128, 128, 128, 0.49);
+            padding: 9.3% 1%;
+            font-size: large;
+            border-top: none;
+          }
+          .numbers .default:focus {
+            background-color: yellow;
+          }
+          .numbers .row button:last-child {
+            border-right: none;
+          }
+
+/* FOOTER*/
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+}
+  .check {
+    float: left;
+    padding: 4vh;
+  }
+  .pay {
+    float: right;
+    padding: 3vh;
+  }
+      .pay .btn {
+        color: white;
+        background-color: #44C344;
+        padding: 3vh 3vw;
+        font-size: larger;
+        font-weight: bold;
+      }

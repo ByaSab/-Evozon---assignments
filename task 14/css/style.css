@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #363C5E;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-75 {
+  width: 75%;
+}
+
+.col-25 {
+  width: 25%;
+}
+.col-50 {
+  width: 50%;
+}
+
+.header {
+  margin-top: 2%;
+}
+    .logo {
+      text-align: center;
+    }
+    .heading {
+      text-align: center;
+      color: white;
+      margin-top: 2%;
+    }
+        .heading h1,
+        .heading h2 {
+          font-weight: lighter;
+          margin: 0;
+        }
+
+
+    .main_container {
+      background-color: #F6F7F2;
+      width: 56%;
+      margin: 0 auto;
+      overflow: hidden;
+
+          transform: translate(0, 49%);
+    }
+        .content {
+          background-color: #F7F9F4;
+          overflow: hidden;
+        }
+            .content .text_wrapp {
+              float: left;
+              padding-left: 15%;
+              width: 100%;
+            }
+                .headings {
+                  border-bottom: 1px solid grey;
+                  text-align: center;
+                }
+
+
+
+                    .headings p {
+                      margin: 0;
+                      font-size: xx-large;
+                    }
+                        .headings p:last-child {
+                          margin-bottom: 12%;
+                          font-size: large;
+                        }
+                    .headings h1 {
+                      color:#FF7F00;
+                      font-size: -webkit-xxx-large;
+                    }
+                    .discount {
+                      text-align: center;
+                    }
+                      .discount p span {
+                        color:#FF7F00;
+                        font-weight: 600;
+                      }
+            .car {
+              float: right;
+            }
+                .car img {
+                  width: 21vw;
+                  height: 30vh;
+                }
+        .right_bar {
+          background-color: #FF7F00;
+          text-align: center;
+        }
+            .right_bar .text_wrapp {
+              padding: 37%;
+            }
+                .right_bar h1 {
+                  margin: 0;
+                  color: white;
+                }
+                .fa-arrow-right {
+                  color: white;
+                }

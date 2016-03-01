@@ -1,0 +1,291 @@
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  heigth: 100%;
+  max-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.header_nav {
+  overflow: hidden;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 0.5%;
+}
+  .left_content input {
+    border: none;
+    border-right: 1px solid grey;
+  }
+  .left_content span {
+    color: grey;
+  }
+  .right_content {
+    text-align: right;
+    overflow: hidden;
+  }
+    .right_content a {
+      float: right;
+      color: black;
+      margin-left: 15%;
+    }
+    .right_content img {
+      float: right;
+      border-radius: 25px;
+      margin-right: 1%;
+    }
+    .right_content p {
+      float: right;
+      margin: 0;
+    }
+.banner {
+  position: relative;
+  background: url(../img/iceland.jpg) no-repeat center;
+  background-size: cover;
+  height: 75vh;
+}
+  #header_text {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 22vh;
+    left: 28vw;
+  }
+  .banner h1 {
+    margin-bottom: 0;
+    font-size: 10vh;
+    color: white;
+  }
+  .banner p {
+    margin-top: 0;
+    font-size: xx-large;
+    color: white;
+  }
+  .banner_nav {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 7.5%;
+    background: black;
+  }
+  .banner_nav a:hover {
+    padding: 2.5%;
+    border-bottom: 1px solid grey;
+  }
+    .left_nav {
+      list-style: none;
+      width: 100%;
+      padding: 0;
+    }
+      .left_nav li, 
+      .right_nav li {
+        display: inline;
+      }
+      .left_nav li a {
+        color: white;
+        text-decoration: none;
+        margin-right: 2vw;
+      }
+    .right_nav {
+      list-style: none;
+      text-align: right;
+      color: white;
+    }
+      .right_nav li a {
+        color: white;
+        text-decoration: none;
+      }
+      .right_nav img {
+        width: 5%;
+      }
+    /* Dropdown*/
+    .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 5%;
+}
+
+.dropdown span {
+  color: white;
+  margin-right: 2vw;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.info {
+  width: 70%;
+  margin: 0 auto;
+}
+  .info  p{
+    line-height: 3.5vh;
+  }
+
+.history {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 3.5vh;
+}
+.img {
+  width: 80%;
+  margin: 0 auto;
+}
+  .img img {
+    width: 100%;
+  }
+    
+
+#after_text {
+  width: 70%;
+  margin: 0 auto;
+  line-height: 3.5vh;
+}
+
+.cuisine {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+  .cuisine p {
+    line-height: 3.5vh;
+  }
+
+  
+.img_cuisine img {
+  width: 100%;
+  height: 100%;
+}
+
+.img p {
+  margin-top: 0;
+  font-style: italic; 
+}
+.img span {
+  text-decoration: underline;
+}
+
+.politics {
+  width: 70%;
+  margin: 0 auto;
+}
+.nav {
+  border-bottom: 1px solid black;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1%;
+}
+.nav ul li {
+  margin-right: 3vw;
+  display: inline;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav ul li a:hover {
+  padding-bottom: 1%;
+  border-bottom: 1px solid black;
+  font-weight: bold;
+}
+.politics {
+  margin-bottom: 5%;
+}
+.politics p {
+  line-height: 3.5vh;
+}
+.map {
+  position: relative;
+  text-align: center;
+  margin-top: 5%;
+}
+.photo_descr {
+  position: absolute;
+  top: 0;
+  font-size: xx-large;
+}
+.footer {
+  background: rgba(194, 194, 194, 0.36);
+  overflow: hidden;
+}
+  .footer .inner {
+    width: 70%;
+    margin:0 auto;
+    padding-bottom: 3vh;
+    overflow: hidden;
+  }
+    .footer .inner ul {
+      list-style: none;
+      padding: 0;
+      padding-left: 5%;
+    }
+      .footer .inner ul li a {
+        color: black;
+      }
+    #first_list,
+    #second_list {
+      line-height: 4vh;
+      float: left;
+      margin-right: 5%;
+    }
+
+.mini_footer  {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+  .mini_footer p span {
+    text-decoration: underline;
+  }
+  .mini_footer ul {
+    list-style: none;
+  }
+    .mini_footer ul li {
+      display: inline;
+      margin-right: 3vw;
+    }
+      .mini_footer ul li a {
+        color: black;
+      }

@@ -1,0 +1,398 @@
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display SC', serif;
+  font-family: 'Cantata One', serif;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-75 {
+  width: 75%;
+}
+.col-65 {
+  width: 65%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-10 {
+  width: 10%;
+}
+.col-15 {
+  width: 15%;
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.padding {
+  padding: 20px;
+}
+/* HEADER*/
+
+.logo {
+  font-family: 'Playfair Display SC', serif;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: table;
+  width: 100%;
+  padding: 21px;
+}
+    .logo p {
+      margin: 0;
+      display: table-cell;
+      vertical-align: middle;
+      font-size: 32px;
+      letter-spacing: -7px;
+    }
+
+.menu {
+  padding: 14px 0;
+}
+.menu ul {
+  padding-left: 2.4%;
+}
+.menu ul li, .search_tab ul li {
+  display: inline;
+  margin-right: 65px;
+  font-family: 'Source Sans Pro', sans-serif;
+
+  color: rgba(128, 128, 128, 0.47);
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+.menu ul li a {
+  color: rgba(128, 128, 128, 0.47);
+  text-decoration: none;
+}
+
+.search_tab {
+  text-align: right;
+  padding: 13px 0;
+}
+.search_tab ul li {
+  margin-right: 25px;
+}
+  .search_tab ul li a {
+    color: rgba(128, 128, 128, 0.47);
+    text-decoration: none;
+  }
+    #cart_nr {
+      background-color: #ADA177;
+      padding: 5px;
+      color: white;
+    }
+    .search_tab ul li:first-child {
+      border-right: 1px solid rgba(128, 128, 128, 0.44);;
+      padding-right: 25px;
+    }
+
+.banner .img {
+  background-color: red;
+  background: url('../img/header.jpg') no-repeat center;
+  background-size: cover;
+  height: 750px;
+
+  display: table;
+  width: 100%;
+}
+    .banner .img .text_wrapper  {
+        font-family: 'Source Sans Pro', sans-serif;
+        color: rgba(128, 128, 128, 0.47);
+        padding-left: 20%;
+        display: table-cell;
+        vertical-align: middle;
+    }
+        .banner .img .text_wrapper  p:first-child {
+          font-family: 'Cantata One', serif;
+          display: inline-block;
+          font-size: 80px;
+          width: 50%;
+          color: black;
+          margin-bottom: 0;
+        }
+        .banner .img .text_wrapper h1 {
+          overflow: hidden;
+          text-align: center;
+          margin-top: 0;
+
+          color: white;
+          letter-spacing: 5px;
+          padding-bottom: 25px;
+          font-weight: 200;
+          margin-bottom: 0;
+
+        }
+            .banner .img .text_wrapper h1:before {
+              background-color: #B6AB87;
+              content: "";
+              display: inline-block;
+              height: 2px;
+              position: relative;
+              vertical-align: middle;
+              width: 2%;
+
+              left: 0.5em;
+              margin-left: -75%;
+              margin-right: 39px;
+            }
+            #bottom_border {
+              background-color: white;
+              height: 1px;
+              width: 532px;
+            }
+
+          .banner .img .text_wrapper h2 {
+            color: white;
+            letter-spacing: 5px;
+            font-weight: 200;
+            margin-left: 118px;
+          }
+              .banner .img .text_wrapper h2 span {
+                position: relative;
+              }
+              .banner .img .text_wrapper h2 span:before {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 50%;
+                right: 0;
+                border-top: 1px solid;
+                border-color: red;
+
+                -webkit-transform:rotate(39deg);
+                -moz-transform:rotate(39deg);
+                -ms-transform:rotate(39deg);
+                -o-transform:rotate(39deg);
+                transform:rotate(39deg);
+              }
+              .vid_block {
+                position: relative;
+                border: 1px solid rgba(255, 0, 0, 0.51);
+                height: 397px;
+                width: 359px;
+                margin-left: 270px;
+                margin-top: -350px;
+              }
+
+    .main .centered {
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 86px;
+    }
+
+      .prod_info button{
+        color: white;
+        padding: 5%;
+        background: rgb(142, 144, 36);
+        width: 100%;
+      }
+        .main h1 {
+            font-weight: 600;
+            font-size: 20px;
+            letter-spacing: 2px;
+            color: rgba(128, 128, 128, 0.91);
+        }
+        .first .col-25 {
+          border: 1px solid grey;
+        }
+        .first .col-75 {
+          border-bottom: 1px solid grey;
+          border-top: 1px solid grey;
+          margin-top: 16px;
+        }
+        .product {
+          padding: 2.4%;
+        }
+
+        .second .col-25 {
+          border-bottom: 1px solid grey;
+        }
+
+            .second .col-25 .padding:first-child {
+              border-bottom: 1px solid grey;
+            }
+                .second .col-25 .padding ul {
+                  line-height: 27px;
+                }
+          .images {
+            height: 100%;
+            border-left: 1px solid grey;
+          }
+            .large_image {
+              border-bottom: 1px solid grey;
+              height: 412px;
+            }
+                .large_image img {
+                  padding: 40px 0 40px 40px;
+                  height: 100%;
+                  width: 100%;
+                }
+              .small_images {
+                border-bottom: 1px solid grey;
+                height: 100%;
+              }
+                  .small_images ul {
+                    height: 411px;
+                    margin: 0;
+                    padding: 40px 0;
+                    padding-left: 31px;
+                  }
+                      .small_images ul li {
+                          height: 33.3%;
+                      }
+                          .small_images ul li img {
+                            height: 100%;
+                            width: 100%;
+                          }
+
+/* CALL to action section*/
+.call_to_action {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+  .call_to_action h1 {
+    font-size: xx-large;
+    color: black;
+    width: 47%;
+    margin: 0 auto;
+    margin-top: 8%;
+  }
+  .call_to_action h2 {
+    color: grey;
+    margin-bottom: 4%
+  }
+  .call_to_action a {
+    text-decoration: none;
+    color: grey;
+    border: 1px solid grey;
+    padding: 1%;    background: rgba(128, 128, 128, 0.4);
+  }
+
+  /*MODELS Gallery*/
+  .model_gallery {
+    margin-top: 5%;
+    background: black;
+    overflow: hidden;
+  }
+
+  /* Reviews*/
+  .reviews {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5% 0;
+    overflow: hidden;
+  }
+    .reviews h1 {
+      text-align: center;
+      margin-bottom: 5%;
+    }
+    .reviews .inner {
+      text-align: center;
+    }
+      .inner p {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 12%;
+      }
+      .inner img {
+        border-radius: 25px;
+        width: 3vw;
+      }
+      #border {
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+      }
+
+      #review_button {
+        float: left;
+        width: 100%;
+      }
+        #review_button a {
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 5%;
+          display: block;
+          width: 37%;
+          text-decoration: none;
+          color: grey;
+          border: 1px solid grey;
+          padding: 1%;    background: rgba(128, 128, 128, 0.4);
+        }
+
+  /* FOOTER */
+  .footer {
+    background: rgba(128, 128, 128, 0.28);
+  }
+    .inner_footer {
+      padding: 5%;
+      width: 70%;
+      margin: 0 auto;
+    }
+      .footer span {
+        text-align: center;
+        width: 8%;
+        padding: 1%;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        font-size: xx-large;
+        font-weight: bold;
+      }
+      .min_footer {
+        margin-top:5%;
+        text-align: center;
+      }
+        .min_footer ul li{
+          display: inline;
+          margin-right: 7%;
+        }
+          .min_footer ul li a {
+            text-decoration: none;
+            color: black;
+          }

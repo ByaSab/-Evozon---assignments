@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/background.jpg") no-repeat center;
+  color: #626261;
+
+  overflow: hidden;
+  background-color: #D8D6C7;
+}
+
+
+.background {
+  height: 100%;
+  border-bottom: 700px solid #8E95AF;
+  border-right: 2300px solid transparent;
+}
+
+.main {
+  width: 35%;
+  background-color: #F8F7F0;
+  top: 11%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  left: 50%;
+}
+
+.logo {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.main > p {
+  font-size: 18px;
+}
+.main p {
+  text-align: center;
+  margin-bottom: 10%;
+}
+.main h1 {
+  text-align: center;
+}
+.date {
+  text-align: center;
+  color: rgba(128, 128, 128, 0.74)
+}
+    .date h1 {
+      margin-bottom: 0;
+    }
+    .date h2 {
+      margin-top: 0;
+      margin-bottom: 10%;
+    }
+
+.button {
+  text-align: center;
+}
+    .button .btn {
+      background-color: #BEBBA2;
+      color: white;
+      font-size: 25px;
+      letter-spacing: 2px;
+    }
+
+.cancel {
+  margin-top: 2%;
+}
+    .cancel a {
+      font-size: 15px;
+      color: #BEBBA2;
+      border-bottom: 1px dotted #BEBBA2;
+    }
+
+.footer {
+  margin-bottom: 10%;
+}
+.footer p {
+  margin: 0;
+  color: rgba(128, 128, 128, 0.56);
+}
+
+.side_image {
+  position: absolute;
+  width: 29%;
+  height: 65%;
+  top: 27%;
+  z-index: 3;
+  left: 65%;
+}

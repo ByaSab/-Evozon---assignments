@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+
+.col-50 {
+  width: 50%;
+}
+
+
+/* MY PREDEFINE STYLES*/
+ a ,
+ a:hover {
+  text-decoration: none;
+  color: grey;
+ }
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* END */
+
+
+/* Container*/
+.container {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1169px;
+}
+    .inner_container {
+      padding: 0 10%;
+    }
+
+/* Left Side*/
+.photos img {
+  width: 100%;
+}
+.photos ul{
+  list-style: none;
+  padding: 0;
+  margin-top: 2%;
+}
+    .photos ul li {
+      width: 33.33%;
+      display: inline-block;
+    }
+        .photos ul li > img {
+          width: 100%;
+        }
+/* END Left Side*/
+
+/* Right Side*/
+/* Header */
+.header h1 {
+  margin-top: 0;
+}
+  /*DROP DOWN*/
+  .drop-down select {
+    width: 50%;
+    height: 3.5vh;
+}
+        #shoe_nr {
+          padding: 0;
+        }
+          #shoe_nr li {
+            display: inline;
+          }
+      #text_links{
+         padding: 0;
+      }
+          #text_links li {
+            font-size: small;
+            display: inline;
+            color: grey;
+            margin-right: 5%;
+          }
+  #button_list {
+    padding: 0;
+    list-style: none;
+  }
+      #button_list li {
+        display: inline;
+      }
+          #button_list .btn {
+            border-radius: 0;
+            width: 33%;
+          }
+            .btn {
+              background: none;
+              border: 1px solid rgba(128, 128, 128, 0.42);
+            }
+            .btn:focus {
+              color: white;
+            }
+            #first {
+              border-right: 0;
+              margin-right: -1%;
+            }
+            #second {
+              border-left:0;
+              border-right:0;
+            }
+            #third {
+              border-left: 0;
+              margin-left: -1%;
+            }
+  .text pre {
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;
+    display: block;
+    font-size: 13px;
+    line-height: 1.42857143;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: none;
+    line-height: 3vh;
+  }
+
+/* Predefine CLASS*/
+.active {
+  background-color: #3C4A5A;
+  color: white;
+}
+.padding {
+      padding: 5%;
+    } 

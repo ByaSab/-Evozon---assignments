@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after,
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+}
+
+.cf:after,
+.row:after {
+  clear: both;
+}
+
+[class^="col-"],
+[class*=" col-"] {
+  float: left;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center;
+  background: #31374C;
+}
+
+
+
+.container {
+  width: 45%;
+  margin: 0 auto;
+  top: 50%;
+  transform: translate(0, -50%);
+  position: relative;
+}
+    .notes, .note_item {
+      height: 60vh;
+    }
+    .notes, .note_item {
+      background: #F8F7F0;
+      margin: 0 5%;
+    }
+        .text_wrapper {
+          padding: 5% 10%;
+        }
+
+        /*  HEADER */
+            .header {
+              border-bottom: 1px solid black;
+              padding-bottom: 5%;
+              overflow: hidden;
+            }
+                .header span:first-child {
+                  float: left;
+                  color: black;
+                  font-size: 25px;
+                  margin-left: 5%;
+                  font-weight: 600;
+                }
+                .header span:nth-child(2) {
+                  float: right;
+                }
+        /* CONTENT  */
+
+        .notes .content h1 {
+          color:black;
+          margin-bottom: 0;
+          font-size: 22px;
+        }
+        .notes .content h2 {
+          color: #C0C0BF;
+          margin-top: 0;
+          font-size: 20px;
+        }
+        .notes .content div:not(:last-child) {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+        }
+        .note_item .content p {
+          color:#B4A59F;
+        }
+
+              /* FOOTER */
+              .footer {
+                position: absolute;
+                bottom: 0;
+                width: 36.5%;
+                padding: 0 5%;
+                text-align: center;
+                border-top: 1px solid black;
+                margin-top: 43%;
+              }
+              .note_item .footer {
+                margin-top: 51%;
+              }
+                .footer ul {
+                  padding: 0;
+                }
+
+                  .footer ul li {
+                    display: inline;
+                    margin-left: 10%;
+                  }
+                  .footer ul li:first-child {
+                    margin-left: 0;
+                  }
+                      .footer ul li a {
+                        color: #71716F;
+                      }
+              

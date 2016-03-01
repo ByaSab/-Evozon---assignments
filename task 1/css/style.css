@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ADDBA4;
+  font-family: 'Kanit', sans-serif;
+}
+
+    .center_div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 84vw;
+      height: 80vh;
+      background-color: white;
+      box-shadow: 0 0 7px rgb(110, 110, 119);
+    }
+
+    /*////////////// HEADER /////////////////*/
+        .header {
+          border-bottom: 1px solid rgba(0, 0, 0, 0.18);
+          height: 12vh;
+        }
+
+            .header #back {
+              float: left;
+              border: none;
+              background-color: white;
+              font-size: 15px;
+              margin-top: 31px;
+              margin-left: 25px;
+              outline: none;
+              cursor: pointer;
+            }
+                .header #back span {
+                  font-size: 14px;
+                }
+            .header #like {
+              float: right;
+              border: none;
+              background-color: white;
+              margin-top: 8px;
+              margin-right: 25px;
+              outline: none;
+              cursor: pointer;
+            }
+                .header #like span {
+                  font-size: 43px;
+                  color: grey;
+                }
+
+
+        /*////////////////// CONTENT //////////////*/
+        .content {
+          clear: both;
+          height: 68vh;
+        }
+            .image {
+              float: left;
+              text-align: center;
+              width: 30vw;
+              height: 58vh;
+              padding-top: 10vh;
+              border-right: 1px solid rgba(0, 0, 0, 0.18);
+            }
+              .image img {
+                width: 20vw;
+              }
+            .info {
+              float: left;
+            }
+                .info_header {
+                  padding: 7px;
+                  margin-top: 60px;
+                }
+
+                .info_header h1 {
+                  font-weight: 400;
+                  margin-bottom: 0px;
+                  margin-left: 63px;
+                  margin-top: 32px;
+                }
+                .info_header h2 {
+                  margin-top: 5px;
+                  font-weight: 300;
+                  font-size: 19px;
+                  margin-left: 64px;
+                }
+            .paragraph {
+              clear: both;
+              margin-left: 72px;
+              width: 385px;
+            }
+                .paragraph p{
+                    font-weight: 300;
+                }
+            .buttons {
+                margin-top: 35px;
+                margin-left: 68px;
+            }
+                .buttons .btn1,.btn2{
+                  display: inline;
+                  margin: 3px;
+                }
+                .buttons .btn1 button,.btn2 button {
+                  padding: 10px 40px;
+                  border: 1px solid rgba(0, 0, 0, 0.18);
+                  background-color: white;
+                  cursor: pointer;
+                }
+
